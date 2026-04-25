@@ -1,2 +1,29 @@
-# -
-本作品是一個針對加密貨幣市場（如 BTCUSDT）開發的自動化回測框架。系統能自動從幣安（Binance）獲取歷史 K 線數據，並結合多重技術指標（EMA、RSI、ADX、ATR、MACD）構建複雜的交易邏輯。  不同於簡單的價格監控，本系統模擬了真實的交易環境，包含手續費計算、倉位控管、以及動態的「追蹤止損/止盈」機制（基於 ATR 倍數）。回測完成後，系統會透過 QuantStats 專業統計庫，自動產出夏普比率、最大回撤、勝率等專業投資指標，並以圖表呈現資金曲線，幫助開發者客觀評估量化交易策略的獲利潛力與風險。
+# 📈 Crypto Trading Backtest System
+
+## 📌 專案介紹
+這是一個針對加密貨幣（BTCUSDT）的自動化交易回測系統，
+透過技術指標（RSI、ADX、EMA）建立交易策略，
+並評估策略的績效與風險。
+
+---
+
+## ⚙️ 使用技術
+- Python
+- Pandas / Numpy
+- 技術指標（RSI / ADX / EMA）
+- QuantStats（績效分析）
+
+---
+
+## 🚀 功能
+- 自動抓取 Binance 歷史 K 線
+- 建立交易策略（RSI + ADX + EMA）
+- 回測交易績效
+- 輸出勝率 / 最大回撤 / 報酬率
+
+---
+
+## ▶️ 如何執行
+```bash
+pip install -r requirements.txt
+python RSI_ADX_EMA_2.py
